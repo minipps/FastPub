@@ -2,8 +2,8 @@ from fastapi import APIRouter
 
 router = APIRouter(prefix="/user")
 USERS = []
-@router.get("/"):
-    
+
+@router.get("/")    
 def get_all_users():
     return USERS
 
